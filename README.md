@@ -28,13 +28,13 @@ what is the best time to book?
 What are the common amenities for the properties in Seattle?
 Relationship between Review and price?
 
-## Questions on comparison between Seattle and Boston
+  <li> Questions on comparison between Seattle and Boston </li>
 What is the price comparison?
 Amenities comparison?
 Accommodatescomparison?
 Bedrooms comparison?
 
-## Questions on General perspective
+  <li> Questions on General perspective </li>
 Which features will provide significant importance in booking an Airbnb stay in the future
 </ol>
   
