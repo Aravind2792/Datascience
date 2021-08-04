@@ -21,7 +21,8 @@ statsmodels==0.12.2
 
 Detailed analysis and results in https://medium.com/@aravindachu92/6ab9d6790692
 The analysis is structured by addressing these questions:
-## Question as a Airbnb Customers
+<ol>
+  <li> Question as a Airbnb Customers </li>
 How is the price varied for the properties
 what is the best time to book?
 What are the common amenities for the properties in Seattle?
@@ -35,5 +36,7 @@ Bedrooms comparison?
 
 ## Questions on General perspective
 Which features will provide significant importance in booking an Airbnb stay in the future
+</ol>
+  
 
 
