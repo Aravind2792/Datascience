@@ -48,7 +48,7 @@ Which features will provide significant importance in booking an Airbnb stay in 
 
 # Reference
 The data and its description is obtained from:
-https://www.kaggle.com/airbnb/seattle/data
+https://www.kaggle.com/airbnb/seattle/data <br>
 https://www.kaggle.com/airbnb/boston
 
 
