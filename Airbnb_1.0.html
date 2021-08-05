@@ -14337,7 +14337,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#importing the libraries here</span>
@@ -14363,7 +14363,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importing the Seattle dataset</span>
@@ -14380,7 +14380,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># importing the Boston dataset</span>
@@ -14414,10 +14414,11 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">calendar_dataset</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Function to change the data type of date column and strip the price column of &#39;$&#39; and white space. &#39;&#39;&#39;</span>
     <span class="c1">#converting the data type of date column from object to date format</span>
     <span class="n">data</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">])</span>
     <span class="c1"># converting the price column into float</span>
@@ -14433,10 +14434,11 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_seattle_calendar</span><span class="o">=</span><span class="n">calendar_dataset</span><span class="p">(</span><span class="n">df_seattle_calendar</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Appyling the cleanse function into calendar dataset </span>
+<span class="n">df_seattle_calendar</span><span class="o">=</span><span class="n">calendar_dataset</span><span class="p">(</span><span class="n">df_seattle_calendar</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14447,10 +14449,11 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_seattle_calendar</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Having a look at the info</span>
+<span class="n">df_seattle_calendar</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -14503,10 +14506,12 @@ memory usage: 32.0+ MB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">listing_dataset</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Function to  price column into float, strip the price column of &#39;$&#39; and white space from price columns </span>
+<span class="sd">    and dropping the Nan from review columns.&#39;&#39;&#39;</span>
     <span class="c1"># converting the price column into float</span>
     <span class="n">data</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;price&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
     <span class="n">data</span><span class="p">[</span><span class="s1">&#39;cleaning_fee&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;cleaning_fee&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;$&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
@@ -14732,11 +14737,11 @@ memory usage: 945.5+ KB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#creating functions for grouping for bar plots</span>
-<span class="k">def</span> <span class="nf">custom_plots</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">xlabel</span><span class="p">,</span><span class="n">ylabel</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">custom_plots</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">xlabel</span><span class="p">,</span><span class="n">ylabel</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Creating functions for grouping for bar plots.&#39;&#39;&#39;</span>
     <span class="k">if</span> <span class="n">ax</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>
     <span class="n">ax</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">palette</span><span class="o">=</span><span class="s1">&#39;rocket&#39;</span><span class="p">)</span>
@@ -14764,8 +14769,8 @@ memory usage: 945.5+ KB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#creating function for grouping variables based on mean</span>
-<span class="k">def</span> <span class="nf">custom_grouping_mean</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">var1</span><span class="p">,</span><span class="n">var2</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">custom_grouping_mean</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">var1</span><span class="p">,</span><span class="n">var2</span><span class="p">,</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Creating function for grouping variables based on mean&#39;&#39;&#39;</span>
     <span class="n">df_gr</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">var1</span><span class="p">)[</span><span class="n">var2</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="n">df_gr</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_gr</span><span class="p">)</span>
     <span class="n">df_gr</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15631,7 +15636,8 @@ Name: accommodates, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Taking out the months of each datetime and converting it into numericals</span>
+<span class="n">df_seattle_calendar</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>
 <span class="n">df_seattle_calendar</span><span class="p">[</span><span class="s1">&#39;month_new&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">],</span><span class="mi">12</span><span class="p">,</span>
                                       <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;January&#39;</span><span class="p">,</span><span class="s1">&#39;February&#39;</span><span class="p">,</span><span class="s1">&#39;March&#39;</span><span class="p">,</span><span class="s1">&#39;April&#39;</span><span class="p">,</span><span class="s1">&#39;May&#39;</span><span class="p">,</span><span class="s1">&#39;June&#39;</span><span class="p">,</span><span class="s1">&#39;July&#39;</span><span class="p">,</span><span class="s1">&#39;August&#39;</span><span class="p">,</span><span class="s1">&#39;September&#39;</span><span class="p">,</span>
                                               <span class="s1">&#39;October&#39;</span><span class="p">,</span><span class="s1">&#39;November&#39;</span><span class="p">,</span><span class="s1">&#39;December&#39;</span><span class="p">])</span>
@@ -15857,11 +15863,11 @@ Name: accommodates, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">amenities</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
-    
+    <span class="sd">&#39;&#39;&#39; Function to make the Amenities column interpretable.&#39;&#39;&#39;</span>
     <span class="n">data</span><span class="p">[</span><span class="s1">&#39;amenities_new&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;amenities&quot;</span><span class="p">]</span>
     <span class="n">data</span><span class="p">[</span><span class="s1">&#39;amenities_new&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;amenities_new&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;}&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;{&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
     <span class="n">am</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;amenities_new&#39;</span><span class="p">]</span>
@@ -16094,7 +16100,8 @@ Name: accommodates, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Multiple Y-axis line plot for plotting review and price vs Neighbourhood</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
 <span class="n">x1</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df_seattle_reviews</span><span class="p">[</span><span class="s1">&#39;neighbourhood&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)))</span>
 <span class="n">labels1</span><span class="o">=</span><span class="n">df_seattle_reviews</span><span class="p">[</span><span class="s1">&#39;neighbourhood&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 
@@ -16224,7 +16231,8 @@ Name: accommodates, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_boston_cal</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_boston_cal</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Taking out the months of each datetime and converting it into numericals</span>
+<span class="n">df_boston_cal</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df_boston_cal</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>
 <span class="n">df_boston_cal</span><span class="p">[</span><span class="s1">&#39;month_new&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df_boston_cal</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">],</span><span class="mi">12</span><span class="p">,</span>
                                       <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;January&#39;</span><span class="p">,</span><span class="s1">&#39;February&#39;</span><span class="p">,</span><span class="s1">&#39;March&#39;</span><span class="p">,</span><span class="s1">&#39;April&#39;</span><span class="p">,</span><span class="s1">&#39;May&#39;</span><span class="p">,</span><span class="s1">&#39;June&#39;</span><span class="p">,</span><span class="s1">&#39;July&#39;</span><span class="p">,</span><span class="s1">&#39;August&#39;</span><span class="p">,</span><span class="s1">&#39;September&#39;</span><span class="p">,</span>
                                               <span class="s1">&#39;October&#39;</span><span class="p">,</span><span class="s1">&#39;November&#39;</span><span class="p">,</span><span class="s1">&#39;December&#39;</span><span class="p">])</span>
@@ -16241,7 +16249,8 @@ Name: accommodates, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#line plot to plot the price comparison for months</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="s1">&#39;available&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;t&#39;</span><span class="p">],</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;month_new&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;price&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Seattle&#39;</span><span class="p">)</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_boston_cal</span><span class="p">[</span><span class="n">df_boston_cal</span><span class="p">[</span><span class="s1">&#39;available&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;t&#39;</span><span class="p">],</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;month_new&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;price&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Boston&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Month&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
@@ -16298,7 +16307,7 @@ Name: accommodates, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#top 30 commonly used amenities</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Top 30 commonly used amenities</span>
 <span class="n">amenities_boston</span><span class="o">=</span><span class="n">amenities</span><span class="p">(</span><span class="n">df_boston_li</span><span class="p">)</span>
 </pre></div>
 
@@ -16455,11 +16464,11 @@ Name: accommodates, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[339]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">lineplot</span><span class="p">(</span><span class="n">data1</span><span class="p">,</span><span class="n">data2</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">title</span><span class="p">,</span><span class="n">label1</span><span class="p">,</span><span class="n">label2</span><span class="p">):</span>
-   
+    <span class="sd">&#39;&#39;&#39;Function to draw out line plots.&#39;&#39;&#39;</span>
     <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
     <span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data1</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="n">label1</span><span class="p">)</span>
@@ -16481,7 +16490,8 @@ Name: accommodates, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[340]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lineplot</span><span class="p">(</span><span class="n">df_acc</span><span class="p">,</span><span class="n">df_boston_acc</span><span class="p">,</span><span class="s1">&#39;accommodates&#39;</span><span class="p">,</span><span class="s1">&#39;price&#39;</span><span class="p">,</span><span class="s1">&#39;Accommodates vs Price&#39;</span><span class="p">,</span><span class="s1">&#39;Seattle&#39;</span><span class="p">,</span><span class="s1">&#39;Boston&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#lineplot for Accommodates</span>
+<span class="n">lineplot</span><span class="p">(</span><span class="n">df_acc</span><span class="p">,</span><span class="n">df_boston_acc</span><span class="p">,</span><span class="s1">&#39;accommodates&#39;</span><span class="p">,</span><span class="s1">&#39;price&#39;</span><span class="p">,</span><span class="s1">&#39;Accommodates vs Price&#39;</span><span class="p">,</span><span class="s1">&#39;Seattle&#39;</span><span class="p">,</span><span class="s1">&#39;Boston&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16601,7 +16611,8 @@ Name: accommodates, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[343]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lineplot</span><span class="p">(</span><span class="n">seattle_bedrooms</span><span class="p">,</span><span class="n">boston_bedrooms</span><span class="p">,</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">,</span><span class="s1">&#39;price&#39;</span><span class="p">,</span><span class="s1">&#39;Bedroom price Comparison&#39;</span><span class="p">,</span><span class="s1">&#39;Seattle&#39;</span><span class="p">,</span><span class="s1">&#39;Boston&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#lineplot for Bedrooms</span>
+<span class="n">lineplot</span><span class="p">(</span><span class="n">seattle_bedrooms</span><span class="p">,</span><span class="n">boston_bedrooms</span><span class="p">,</span><span class="s1">&#39;bedrooms&#39;</span><span class="p">,</span><span class="s1">&#39;price&#39;</span><span class="p">,</span><span class="s1">&#39;Bedroom price Comparison&#39;</span><span class="p">,</span><span class="s1">&#39;Seattle&#39;</span><span class="p">,</span><span class="s1">&#39;Boston&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16839,7 +16850,8 @@ Name: accommodates, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[352]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">square_feet_price</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">ind2</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#dropping indices of ind as the values are insignificant</span>
+<span class="n">square_feet_price</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">ind2</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16906,7 +16918,8 @@ Name: accommodates, dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[355]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">square_feet_price_boston</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">ind</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#dropping indices of ind as the values are insignificant</span>
+<span class="n">square_feet_price_boston</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">ind</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16999,10 +17012,11 @@ An AirBnB stay more.
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">amenities</span> <span class="o">=</span> <span class="n">df_seattle_listing</span><span class="p">[</span><span class="s1">&#39;amenities&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="p">[</span><span class="n">amenity</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;{&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;}&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">amenity</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Replacing the unwanted white braces and quotes</span>
+<span class="n">amenities</span> <span class="o">=</span> <span class="n">df_seattle_listing</span><span class="p">[</span><span class="s1">&#39;amenities&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="p">[</span><span class="n">amenity</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;{&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;}&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">amenity</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)])</span>
 <span class="n">df_seattle_listing</span><span class="p">[</span><span class="s1">&#39;amenities&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">amenities</span>
 </pre></div>
 
@@ -17014,10 +17028,11 @@ An AirBnB stay more.
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_seattle_listing</span><span class="p">[</span><span class="s1">&#39;amenities&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#having a look at the result, no white spaces and quotes should be there</span>
+<span class="n">df_seattle_listing</span><span class="p">[</span><span class="s1">&#39;amenities&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -17033,7 +17048,7 @@ An AirBnB stay more.
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
 
 
 
@@ -17062,10 +17077,11 @@ Name: amenities, Length: 3818, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MultiLabelBinarizer</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#importing MultilableBinarizer from sklearn and and fitting into amenities column for creating seperate categorical variables</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MultiLabelBinarizer</span>
 <span class="n">mlb</span> <span class="o">=</span> <span class="n">MultiLabelBinarizer</span><span class="p">()</span>
 <span class="n">amenities_result</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">mlb</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_seattle_listing</span><span class="p">[</span><span class="s1">&#39;amenities&#39;</span><span class="p">]),</span><span class="n">columns</span><span class="o">=</span><span class="n">mlb</span><span class="o">.</span><span class="n">classes_</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">df_seattle_listing</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
 <span class="n">amenities_result</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">amenities_result</span><span class="p">)</span>
@@ -17081,10 +17097,11 @@ Name: amenities, Length: 3818, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mlb</span><span class="o">.</span><span class="n">classes_</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#having a look the classes created</span>
+<span class="n">mlb</span><span class="o">.</span><span class="n">classes_</span>
 </pre></div>
 
      </div>
@@ -17100,7 +17117,7 @@ Name: amenities, Length: 3818, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
 
 
 
@@ -17135,10 +17152,11 @@ Name: amenities, Length: 3818, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_seattle_cal_avail</span><span class="o">=</span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="s1">&#39;available&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#taking out only the available listings alone as it is needed to take the booking count of the same</span>
+<span class="n">df_seattle_cal_avail</span><span class="o">=</span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="n">df_seattle_calendar</span><span class="p">[</span><span class="s1">&#39;available&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;t&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -17149,10 +17167,11 @@ Name: amenities, Length: 3818, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_seattle_avail</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_seattle_cal_avail</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;listing_id&#39;</span><span class="p">)[</span><span class="s1">&#39;available&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#grouping by the count and storing it as DataFrame</span>
+<span class="n">df_seattle_avail</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_seattle_cal_avail</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;listing_id&#39;</span><span class="p">)[</span><span class="s1">&#39;available&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="n">df_seattle_avail</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df_seattle_avail</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;listing_id&#39;</span><span class="p">:</span><span class="s1">&#39;id&#39;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df_seattle_avail</span>
@@ -17171,7 +17190,7 @@ Name: amenities, Length: 3818, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 
 
 
@@ -17275,10 +17294,11 @@ Name: amenities, Length: 3818, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_test</span><span class="o">=</span><span class="n">df_seattle_listing</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_seattle_avail</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#merging the dataset </span>
+<span class="n">df_test</span><span class="o">=</span><span class="n">df_seattle_listing</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_seattle_avail</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17289,10 +17309,11 @@ Name: amenities, Length: 3818, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">df_test</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#checking on the merged columns</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">df_test</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17308,7 +17329,7 @@ Name: amenities, Length: 3818, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 
 
 
@@ -17406,7 +17427,6 @@ Name: amenities, Length: 3818, dtype: object</pre>
  &#39;require_guest_phone_verification&#39;,
  &#39;calculated_host_listings_count&#39;,
  &#39;reviews_per_month&#39;,
- &#39;amenities_new&#39;,
  &#39;&#39;,
  &#39;24-Hour Check-in&#39;,
  &#39;Air Conditioning&#39;,
@@ -17467,10 +17487,11 @@ Name: amenities, Length: 3818, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_test</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">,</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">,</span><span class="s1">&#39;host_response_rate&#39;</span><span class="p">,</span><span class="s1">&#39;host_is_superhost&#39;</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Dropping as the modelling techniques does not accept NaN values. </span>
+<span class="n">df_test</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">,</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">,</span><span class="s1">&#39;host_response_rate&#39;</span><span class="p">,</span><span class="s1">&#39;host_is_superhost&#39;</span><span class="p">,</span>
          <span class="s1">&#39;cleaning_fee&#39;</span><span class="p">,</span><span class="s1">&#39;security_deposit&#39;</span><span class="p">,</span><span class="s1">&#39;extra_people&#39;</span><span class="p">,</span><span class="s1">&#39;minimum_nights&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_rating&#39;</span><span class="p">],</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;any&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
@@ -17482,10 +17503,11 @@ Name: amenities, Length: 3818, dtype: object</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_test</span><span class="p">[[</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">,</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">,</span><span class="s1">&#39;host_response_rate&#39;</span><span class="p">,</span><span class="s1">&#39;host_is_superhost&#39;</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#having a look at the result, should be zero</span>
+<span class="n">df_test</span><span class="p">[[</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">,</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">,</span><span class="s1">&#39;host_response_rate&#39;</span><span class="p">,</span><span class="s1">&#39;host_is_superhost&#39;</span><span class="p">,</span>
          <span class="s1">&#39;cleaning_fee&#39;</span><span class="p">,</span><span class="s1">&#39;security_deposit&#39;</span><span class="p">,</span><span class="s1">&#39;extra_people&#39;</span><span class="p">,</span><span class="s1">&#39;minimum_nights&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_rating&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
@@ -17502,7 +17524,7 @@ Name: amenities, Length: 3818, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 
 
 
@@ -17538,7 +17560,8 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#importing the statsmodel package</span>
+<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
 </pre></div>
 
      </div>
@@ -17552,7 +17575,8 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;intercept&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#adding intercept to the model, to give a constant bias</span>
+<span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;intercept&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span>
 </pre></div>
 
      </div>
@@ -17566,7 +17590,8 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_test</span><span class="p">[[</span><span class="s1">&#39;cancel_flex&#39;</span><span class="p">,</span><span class="s1">&#39;cancel_mode&#39;</span><span class="p">,</span><span class="s1">&#39;cancel_strict&#39;</span><span class="p">]]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#creating categorical model for the model</span>
+<span class="n">df_test</span><span class="p">[[</span><span class="s1">&#39;cancel_flex&#39;</span><span class="p">,</span><span class="s1">&#39;cancel_mode&#39;</span><span class="p">,</span><span class="s1">&#39;cancel_strict&#39;</span><span class="p">]]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;cancellation_policy&#39;</span><span class="p">])</span>
 <span class="n">df_test</span><span class="p">[[</span><span class="s1">&#39;superhost_true&#39;</span><span class="p">,</span><span class="s1">&#39;superhost_false&#39;</span><span class="p">]]</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;host_is_superhost&#39;</span><span class="p">])</span>
 </pre></div>
 
@@ -17581,7 +17606,8 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mlb</span><span class="o">.</span><span class="n">classes_</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#having a look at the classes created by Multilabler</span>
+<span class="n">mlb</span><span class="o">.</span><span class="n">classes_</span>
 </pre></div>
 
      </div>
@@ -17629,7 +17655,8 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span><span class="o">=</span><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;available&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#creating x and y for the model</span>
+<span class="n">y</span><span class="o">=</span><span class="n">df_test</span><span class="p">[</span><span class="s1">&#39;available&#39;</span><span class="p">]</span>
 <span class="n">x</span><span class="o">=</span><span class="n">df_test</span><span class="p">[[</span><span class="s1">&#39;intercept&#39;</span><span class="p">,</span><span class="s1">&#39;cancel_flex&#39;</span><span class="p">,</span><span class="s1">&#39;cancel_mode&#39;</span><span class="p">,</span><span class="s1">&#39;superhost_true&#39;</span><span class="p">,</span><span class="s1">&#39;host_response_rate&#39;</span><span class="p">,</span>
          <span class="s1">&#39;cleaning_fee&#39;</span><span class="p">,</span><span class="s1">&#39;security_deposit&#39;</span><span class="p">,</span><span class="s1">&#39;extra_people&#39;</span><span class="p">,</span><span class="s1">&#39;minimum_nights&#39;</span><span class="p">,</span><span class="s1">&#39;review_scores_rating&#39;</span><span class="p">,</span>
         <span class="s1">&#39;24-Hour Check-in&#39;</span><span class="p">,</span> <span class="s1">&#39;Air Conditioning&#39;</span><span class="p">,</span> <span class="s1">&#39;Breakfast&#39;</span><span class="p">,</span>
@@ -17657,7 +17684,8 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mod</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#assigning OLS for x and y</span>
+<span class="n">mod</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17671,7 +17699,8 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">re</span><span class="o">=</span><span class="n">mod</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#fitting and taking out the p-values</span>
+<span class="n">re</span><span class="o">=</span><span class="n">mod</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 <span class="n">P_values</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">pvalues</span><span class="o">&lt;</span><span class="mf">0.05</span><span class="p">)</span>
 <span class="n">P_values</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">P_values</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;index&#39;</span><span class="p">:</span><span class="s1">&#39;Signifance_Criteria&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="s1">&#39;Result&#39;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -17688,7 +17717,8 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">re</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Summary of the model</span>
+<span class="n">re</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -17922,7 +17952,8 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">font_scale</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#bar plot visual of the p-values</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">font_scale</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s1">&#39;whitegrid&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">8</span><span class="p">])</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">P_values</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Signifance_Criteria&#39;</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Result&#39;</span><span class="p">)</span>
