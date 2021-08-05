@@ -9,13 +9,21 @@ The data is being acquired from Kaggle from the following links:
 https://www.kaggle.com/airbnb/seattle/data
 https://www.kaggle.com/airbnb/boston
 I have considered Seattle dataset for the major part of the analysis and Boston dataset for comparison purpose alone.
+# Files in this repo
+<ol> 
+  <li> Airbnb_1.0.ipynb is the program file. </li>
+  <li> Airbnb_1.0.html is the html version of the program file for quick reference. </li>
+  <li> The csv files are the dataset used </li>
+</ol>
 
 # Packages required
-pandas==1.2.4
-matplotlib==3.4.2
-numpy==1.20.3
-seaborn==0.11.1
-statsmodels==0.12.2
+<ol>
+  <li> pandas==1.2.4 </li>
+  <li> matplotlib==3.4.2 </li>
+  <li> numpy==1.20.3 </li>
+  <li> seaborn==0.11.1 </li>
+  <li> statsmodels==0.12.2 </li>
+</ol>
 
 # Result and Analysis
 
